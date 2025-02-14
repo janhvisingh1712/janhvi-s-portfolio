@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Adamina, serif;
+    overflow-y: auto;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    text-align: left;
+    color: white;
+    padding-left: 5%;
+}
+
+.background-image {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header-wrapper {
+    position: relative;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    max-width: 600px;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    color: rgba(128, 0, 128, 1);
+}
+
+.dropdown div:hover {
+    background: #E564E5;
+    color: white;
+}
+
+.about-link, .gmail-link {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main-content {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 50px;
+    align-items: flex-start; /* Add this line */
+}
+
+.text-column {
+    flex: 1;
+    text-align: left; /* Left-align the text */
+}
+
+.skills-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-profile-picture {
+    width: 180px;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+/* Dialog Box */
+.dialog-box {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.header {
+    background: #E564E5;
+    color: #F2E0F2;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header span {
+    cursor: pointer;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.send-btn {
+    width: 100%;
+    background: #E564E5;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.connect-freelance-projects {
+    background-color: #e564e5;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-height: 500px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    color: #fff;
+    white-space: nowrap;
+    padding: 20px;
+    font: 400 15px Adamina, sans-serif;
+    border: 9px solid #fff;
+    z-index: 1000;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.category-item img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.category-item span {
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    font: 700 16px Poppins, sans-serif;
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.project-date {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.project-description {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.scroll-icon {
+    aspect-ratio: 1.16;
+    object-fit: contain;
+    object-position: center;
+    width: 50px;
+    margin-top: 25px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Skills & Technologies Section */
+.skills-box {
+    background-color: #252145;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Add this line */
+}
+
+.container {
+    max-width: 100%;
+    color: white;
+}
+
+h2, h3 {
+    color: #c68aff;
+}
+
+.language {
+    margin-bottom: 10px;
+}
+
+.progress {
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.bar {
+    height: 20px;
+    transition: width 1s ease-in-out;
+}
+
+.html { background-color: #E34C26; }
+.python { background-color: #3572A5; }
+.javascript { background-color: #F7DF1E; }
+.c { background-color: #A8B9CC; }
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background-color: #444;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.section {
+    margin-top: 20px;
+}

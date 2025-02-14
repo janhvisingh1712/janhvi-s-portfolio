@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Technologies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #252145;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        h2, h3 {
+            color: #c68aff;
+        }
+
+        .language {
+            margin-bottom: 10px;
+        }
+
+        .progress {
+            background-color: #444;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 20px;
+        }
+
+        .bar {
+            height: 20px;
+            transition: width 1s ease-in-out;
+        }
+
+        .html { background-color: #E34C26; }
+        .python { background-color: #3572A5; }
+        .javascript { background-color: #F7DF1E; }
+        .c { background-color: #A8B9CC; }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills span {
+            background-color: #444;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Most Used Languages</h2>
+
+        <div class="language">
+            <span>HTML 80%</span>
+            <div class="progress">
+                <div class="bar html" style="width: 80%;"></div>
+            </div>
+        </div>
+
+        <div class="language">
+            <span>Python 70%</span>
+            <div class="progress">
+                <div class="bar python" style="width: 70%;"></div>
+            </div>
+        </div>
+
+        <div class="language">
+            <span>JavaScript 60%</span>
+            <div class="progress">
+                <div class="bar javascript" style="width: 60%;"></div>
+            </div>
+        </div>
+
+        <div class="language">
+            <span>C 50%</span>
+            <div class="progress">
+                <div class="bar c" style="width: 50%;"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Skills & Technologies</h2>
+
+            <h3>Frameworks & Tools</h3>
+            <div class="skills">
+                <span>TensorFlow</span> <span>Keras</span> <span>Flask</span> <span>Spark</span>
+                <span>Scikit-learn</span> <span>Bootstrap</span> <span>.Net</span> <span>StreamLit</span>
+            </div>
+
+            <h3>Cloud & Infrastructure</h3>
+            <div class="skills">
+                <span>AWS Bedrock</span> <span>Linux/Windows Server Administration</span>
+            </div>
+
+            <h3>SDLC & Collaboration Tools</h3>
+            <div class="skills">
+                <span>Agile</span> <span>Git</span> <span>GitHub</span>
+            </div>
+
+            <h3>Data Analysis & Visualization</h3>
+            <div class="skills">
+                <span>Numpy</span> <span>Matplotlib</span> <span>Pandas</span> <span>Power BI</span>
+                <span>Excel</span> <span>Figma</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const bars = document.querySelectorAll(".bar");
+            bars.forEach((bar) => {
+                let width = bar.style.width;
+                bar.style.width = "0%";
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 500);
+            });
+        });
+    </script>
+
+</body>
+</html>

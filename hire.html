@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Hire Janhvi - Janhvi Singh</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="hire.css">
+</head>
+<body>
+    <div class="profile-container">
+        <img src="https://cdn.builder.io/api/v1/image/assets/ea1e5708404045aa8b9bb1f7eaf34b63/581202249f6213654a01df42ed97d7556b16fdd86085669691631a277e0d7260?apiKey=ea1e5708404045aa8b9bb1f7eaf34b63&" class="background-image" alt=""/>
+        <div class="header-wrapper">
+            <div class="about-link" onclick="window.location.href='indexx.html'">Home</div>
+            <div class="search-container">
+                <input type="text" class="search-bar" id="searchInput" placeholder="Search..." oninput="filterSuggestions()" onfocus="showDropdown()" onblur="clickCheck(event)" onkeypress="handleEnter(event)">
+                <div class="dropdown" id="dropdown">
+                    <div onclick="redirectTo('projects.html')">Janhvi's Projects</div>
+                    <div onclick="redirectTo('whyhire.html')">Why Hire Janhvi</div>
+                </div>
+            </div>
+            <div class="user-info">
+                <div class="gmail-link" onclick="openDialog()">Gmail</div>
+                <img src="https://cdn.builder.io/api/v1/image/assets/ea1e5708404045aa8b9bb1f7eaf34b63/54327afc72e3e9986ff62e423b5719afe150444a193a4ef8fd6249de6d568dc6?apiKey=ea1e5708404045aa8b9bb1f7eaf34b63&" class="profile-picture" alt="User profile picture" onclick="toggleFreelanceBox()"/>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="overview-container">
+                <div class="overview-header">
+                    <div class="overview-title" id="overviewTitle"></div>
+                </div>
+                <div class="overview-text" id="overviewText">
+                    <!-- The text content will be dynamically generated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gmail Dialog Box -->
+    <div class="dialog-box" id="gmailDialog">
+        <div class="header">
+            New Message
+            <span onclick="closeDialog()">✖</span>
+        </div>
+        <input type="email" id="from-email" class="input-field" placeholder="From:">
+        <input type="text" id="subject" class="input-field" placeholder="Subject:">
+        <textarea id="message" placeholder="Write your message here..."></textarea>
+        <button class="send-btn" onclick="sendEmail()">Send</button>
+    </div>
+
+    <!-- Freelance Projects Box -->
+    <div class="connect-freelance-projects" id="freelanceBox">
+        <div class="header">Connect with Me <span onclick="toggleFreelanceBox()">✖</span></div>
+        <div class="category-list">
+            <div class="category-item">
+                <a href="https://www.linkedin.com/in/janhvissingh/" target="_blank">
+                    <img src="C:\Users\Admin\Desktop\linkedin.png" alt="LinkedIn"/>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="https://www.behance.net/janhvisingh15" target="_blank">
+                    <img src="C:\Users\Admin\Desktop\behance.png" alt="Behance"/>
+                    <span>Behance</span>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="https://github.com/janhvisingh1712" target="_blank">
+                    <img src="C:\Users\Admin\Desktop\github.png" alt="GitHub"/>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="https://www.figma.com/design/QXT6w6BQMYUIh9JfynT6US/PROJECTS?node-id=0-1&p=f&t=VRnKolIGFGXuu1DA-0" target="_blank">
+                    <img src="C:\Users\Admin\Desktop\figma.png" alt="Designs"/>
+                    <span>Designs</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="common.js"></script>
+    <script src="hire.js"></script>
+</body>
+</html>

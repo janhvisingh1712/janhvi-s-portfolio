@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Adamina, serif;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.background-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-wrapper {
+    position: relative;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.about-link, .gmail-link {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.user-name {
+    font-size: 48px;
+    margin-top: 80px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+    z-index: 10;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.search-bar {
+    position: relative;
+    border-radius: 50px;
+    background-color: rgba(217, 217, 217, 0.8);
+    width: 100%;
+    font-family: Inter, sans-serif;
+    color: rgba(128, 0, 128, 1);
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-button {
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    color: rgba(128, 0, 128, 1);
+}
+
+.dropdown div:hover {
+    background: #E564E5;
+    color: white;
+}
+
+/* Dialog Box */
+.dialog-box {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1000;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center; /* Ensure content is centered vertically */
+}
+
+.header {
+    background: #E564E5;
+    color: #F2E0F2;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensure header spans the full width */
+}
+
+.header span {
+    cursor: pointer;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.send-btn {
+    width: 100%;
+    background: #E564E5;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.connect-freelance-projects {
+    background-color: #e564e5;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;  /* Fixed width for rectangle structure */
+    max-height: 500px; /* Max height */
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    color: #fff;
+    white-space: nowrap;
+    padding: 20px;
+    font: 400 15px Adamina, sans-serif;
+    border: 9px solid #fff;
+    z-index: 1000;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.category-item img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.category-item span {
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.dropdown div {
+    pointer-events: auto;
+}

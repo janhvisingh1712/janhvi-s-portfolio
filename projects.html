@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Janhvi Singh</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <div class="profile-container">
+        <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/ea1e5708404045aa8b9bb1f7eaf34b63/b4fa325c447f2f9deb3d4528f5e9316e4573d5e2bf59fb074122cd40fcf4f81b?apiKey=ea1e5708404045aa8b9bb1f7eaf34b63&"
+            class="background-image"
+            alt=""
+        />
+        <div class="header-wrapper">
+            <div class="about-link" onclick="window.location.href='indexx.html'">Home</div>
+            <div class="search-container">
+                <input type="text" class="search-bar" id="searchInput" placeholder="Search..." oninput="filterSuggestions()" onfocus="showDropdown()" onblur="clickCheck(event)">
+                <div class="dropdown" id="dropdown">
+                    <div onclick="redirectTo('projects.html')">Janhvi's Projects</div>
+                    <div onclick="redirectTo('hire.html')">Why Hire Janhvi</div>
+                </div>
+            </div>
+            <div class="user-info">
+                <div class="gmail-link" onclick="openDialog()">Gmail</div>
+                <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/ea1e5708404045aa8b9bb1f7eaf34b63/54327afc72e3e9986ff62e423b5719afe150444a193a4ef8fd6249de6d568dc6?apiKey=ea1e5708404045aa8b9bb1f7eaf34b63&"
+                    class="profile-picture"
+                    alt="User profile picture"
+                    onclick="toggleFreelanceBox()"
+                />
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="text-column">
+                <div class="projects-list">
+                    <div class="project-item">
+                        <h2 class="project-title"><a href="https://www.figma.com/design/wq1bkEQ6QFZmaREChgw4GZ/pizza-landing-page?t=4VT9DtufY8sIscV3-0" style="color: #c68aff;">Pizza Hut Special – Interactive Food Menu</h2></a>
+                        <p class="project-date">February 2025</p>
+                        <p class="project-description">
+                            An interactive and visually appealing digital menu design for Pizza Hut, created in Figma. This prototype features smooth animations and transitions to enhance user engagement. The layout is clean and minimalistic, highlighting the featured pizzas with a high-quality display.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <h2 class="project-title"><a href="https://www.figma.com/design/aGD6Az7tQPLJQiqpLqU7z3/Donutdisplay?t=4VT9DtufY8sIscV3-0" style="color: #c68aff;" >Blueberry Delight – Animated Doughnut Ad</h2></a>                      
+                        <p class="project-date">February 2025</p>
+                        <p class="project-description">
+                            A creative animated ad design showcasing a blueberry-flavored doughnut in a vibrant purple theme. Developed in Figma, this project focuses on engaging visual storytelling by integrating 3D elements, layered typography, and floating elements for a dynamic feel.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <h2 class="project-title"><a href="https://www.figma.com/design/NgCKwtffwvRTGAB8YiGRPB/fanta?t=4VT9DtufY8sIscV3-0" style="color: #c68aff;">Orange – Refreshing Drink Advertisement</h2></a>                
+                        <p class="project-date">February 2025</p>
+                        <p class="project-description">
+                            A bright, energetic advertisement concept designed in Figma, highlighting Fanta Orange’s citrusy flavor. This project includes prototyped animations to create an eye-catching visual experience. The layout uses 3D product placement techniques, typography blending, and natural elements like orange slices and leaves for realism.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <h2 class="project-title">Mental Health Tracker- CalmPulse</h2>
+                        <p class="project-date">Present</p>
+                        <p class="project-description">
+                            Independently developing a cross-platform mental health tracking app
+                            using React Native and AI-driven analytics. Implemented mood tracking,
+                            journaling, and trigger analysis using Natural Language Processing
+                            (NLP). Designed an aesthetic and calming UI/UX using Canva and Figma,
+                            ensuring an engaging user experience. Building a chatbot for real-time
+                            emotional support, enhancing user interaction and well-being tracking.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <h2 class="project-title">AWS Bedrock Generative AI Project</h2>
+                        <p class="project-date">January 2025</p>
+                        <p class="project-description">
+                            Developed a generative AI application as part of the AWS Bedrock
+                            Certification program. Implemented foundation models (FMs) from AWS
+                            Bedrock for text generation and AI-powered automation. Utilized AWS
+                            Lambda, API Gateway, and S3 for scalable and serverless deployment.
+                            Applied fine-tuning techniques to enhance AI model performance for
+                            domain-specific applications. Designed an interactive Streamlit-based
+                            UI for seamless user interaction and testing.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <h2 class="project-title"><a href="https://github.com/janhvisingh1712/Oral-cancer-prediction-system-using-deep-learning" style="color: #c68aff;">Oral Cancer Prediction System</h2></a>                 
+                        <p class="project-date">Nov 2024</p>
+                        <p class="project-description">
+                            Developed an advanced deep learning model for oral cancer prediction,
+                            leveraging EfficientNet architecture to improve diagnostic accuracy.
+                            Designed and trained a deep learning model using the EfficientNet
+                            architecture, improving diagnostic accuracy by 35%. Documented
+                            methodologies and results, contributing to a research paper currently
+                            under publication review.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <h2 class="project-title">Music Recommendation System</h2>
+                        <p class="project-date">December 2024</p>
+                        <p class="project-description">
+                            Built a recommendation engine using collaborative and content-based
+                            filtering. Integrated large datasets and optimized model performance
+                            using feature engineering. Deployed the system using Streamlit for
+                            real-time user interaction.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <h2 class="project-title">Swiggy Recommendation System</h2>
+                        <p class="project-date">August 2024</p>
+                        <p class="project-description">
+                            Built a personalized recommendation system for Swiggy using
+                            machine learning techniques. Analyzed user preferences, order history,
+                            and restaurant data to suggest relevant food items, enhancing user
+                            engagement and satisfaction.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <h2 class="project-title"><a href="https://www.kaggle.com/code/janhvisubhashsingh/twitter-data-analysis-janhvi-singh-21ec1008/edit" style="color: #c68aff;">Twitter Sentiment Analysis</h2></a>              
+                        <p class="project-date">July 2024</p>
+                        <p class="project-description">
+                            Implemented a sentiment analysis model to analyze tweets and determine public opinion trends. Utilized NLP techniques to classify sentiments as positive, negative, or neutral, providing insights into social media trends and user sentiments.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <h2 class="project-title">Fingerprint and Face Recognition-Based Attendance Monitoring System</h2>
+                        <p class="project-date">March 2024</p>
+                        <p class="project-description">
+                            Designed and implemented a fingerprint and face recognition-based attendance system using ESP32 for verification on a real time basis. Integrated a database to store attendance records and utilized facial and fingerprint recognition for secure and efficient monitoring.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <h2 class="project-title">Third Eye for Blind Ultrasonic Vibrator Glove for Navigation Semester</h2>
+                        <p class="project-date">October 2024</p>
+                        <p class="project-description">
+                            Designed a wearable navigation system to assist visually impaired individuals using ultrasonic sensors for feedback through touch and sound. Integrated a Recurrent Neural Network (RNN) to enhance navigation systems and remember past data, such as GPS coordinates. Focused on real-time data processing and sensor integration for effective navigation.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <h2 class="project-title">Water Quality Monitoring System with Temperature and Turbidity Sensors</h2>
+                        <p class="project-date">November 2023</p>
+                        <p class="project-description">
+                            Developed a water quality monitoring system using Arduino. Utilized temperature and turbidity sensors to measure water quality and displayed real-time results on an interface for monitoring and analysis. Developed a wireless connection circuit board using a WIFI module to display the temperature and turbidity.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <h2 class="project-title">Restaurant Website</h2>
+                        <p class="project-date">June 2023</p>
+                        <p class="project-description">
+                            Developed an interactive restaurant website with a dynamic backend, enabling real-time menu updates, user authentication, and online reservations. Integrated a responsive UI for seamless user experience and optimized performance for smooth navigation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-column">
+                <div class="skills-box">
+                    <div class="container">
+                        <h2>Most Used Languages</h2>
+
+                        <div class="language">
+                            <span>HTML 80%</span>
+                            <div class="progress">
+                                <div class="bar html" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="language">
+                            <span>Python 70%</span>
+                            <div class="progress">
+                                <div class="bar python" style="width: 70%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="language">
+                            <span>JavaScript 60%</span>
+                            <div class="progress">
+                                <div class="bar javascript" style="width: 60%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="language">
+                            <span>C 50%</span>
+                            <div class="progress">
+                                <div class="bar c" style="width: 50%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h2>Skills & Technologies</h2>
+
+                            <h3>Frameworks & Tools</h3>
+                            <div class="skills">
+                                <span>TensorFlow</span> <span>Keras</span> <span>Flask</span> <span>Spark</span>
+                                <span>Scikit-learn</span> <span>Bootstrap</span> <span>.Net</span> <span>StreamLit</span>
+                            </div>
+
+                            <h3>Cloud & Infrastructure</h3>
+                            <div class="skills">
+                                <span>AWS Bedrock</span> <span>Linux/Windows Server Administration</span>
+                            </div>
+
+                            <h3>SDLC & Collaboration Tools</h3>
+                            <div class="skills">
+                                <span>Agile</span> <span>Git</span> <span>GitHub</span>
+                            </div>
+
+                            <h3>Data Analysis & Visualization</h3>
+                            <div class="skills">
+                                <span>Numpy</span> <span>Matplotlib</span> <span>Pandas</span> <span>Power BI</span>
+                                <span>Excel</span> <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dialog-box" id="gmailDialog">
+        <div class="header">
+            New Message
+            <span onclick="closeDialog()">✖</span>
+        </div>
+        <input type="email" id="from-email" class="input-field" placeholder="From:">
+        <input type="text" id="subject" class="input-field" placeholder="Subject:">
+        <textarea id="message" placeholder="Write your message here..."></textarea>
+        <button class="send-btn" onclick="sendEmail()">Send</button>
+    </div>
+    
+    <div class="connect-freelance-projects" id="freelanceBox">
+        <div class="header">Connect with Me <span onclick="toggleFreelanceBox()">✖</span></div>
+        <div class="category-list">
+            <div class="category-item">
+                <a href="https://www.linkedin.com/in/janhvissingh/" target="_blank">
+                    <img src="C:\Users\Admin\Desktop\linkedin.png" alt="LinkedIn"/>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="https://www.behance.net/janhvisingh15" target="_blank">
+                    <img src="C:\Users\Admin\Desktop\behance.png" alt="Behance"/>
+                    <span>Behance</span>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="https://github.com/janhvisingh1712" target="_blank">
+                    <img src="C:\Users\Admin\Desktop\github.png" alt="GitHub"/>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="https://www.figma.com/design/QXT6w6BQMYUIh9JfynT6US/PROJECTS?node-id=0-1&p=f&t=VRnKolIGFGXuu1DA-0" target="_blank">
+                    <img src="C:\Users\Admin\Desktop\figma.png" alt="Designs"/>
+                    <span>Designs</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="common.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
